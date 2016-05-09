@@ -1,0 +1,24 @@
+#mainImage{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.displayed{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#currentValue{
+	text-align: center;
+	margin-top: 100px;
+}
+
+#minParam{
+	float: left;
+}
+
+#maxParam{
+	float:right;
+}
