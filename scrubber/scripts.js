@@ -8,24 +8,25 @@ function changeImage(){
 			
 			document.getElementById("currentValue").innerHTML = currentValue;
 			
-			/*var i = 0;
-			while(i < mainImageChildren.length){
-				var minValForThisImage = i * interval;
-				var maxValForThisImage = (i+ 1) * interval;
-				for(var j = 0; j < mainImageChildren.length; j++){
-					if(i == j)
-						mainImageChildren[j].style.display = "block"
-					else
-						mainImageChildren[j].style.display = "none";
-				}
-				if(currentValue < minValForThisImage)
-					i--;
-				if(currentValue > maxValForThisImage)
-					i++;
-			}*/
+			var minArray = [];
+			var maxArray = [];
+			for(var i = 0; i < mainImageChildren.length; i++){
+				minArray.push(i * interval);
+				maxArray.push((i + 1) * interval);
+			}
+			
+			for(var j = 0; j < mainImageChildren.length; j++){
+				if(currentValue >= minArray[j] && currentValue < maxArray[j])
+					mainImageChildren[j].style.display = "block";
+				else
+					mainImageChildren[j].style.display = "none";
+					
+				if(currentValue == maxValue)
+					mainImageChildren[mainImageChildren.length - 1].style.display = "block";
+			}
 			
 			/*hardcoded for now*/
-			if(document.getElementById("myRange").value < 10){
+			/*if(document.getElementById("myRange").value < 10){
 				document.getElementById("image1").style.display = "block";
 				for(var i = 0; i < mainImageChildren.length; i++){
 					if(mainImageChildren[i].id == "image1")
@@ -114,5 +115,5 @@ function changeImage(){
 					else
 						mainImageChildren[i].style.display = "none";
 				}
-			}
+			}*/
 		}
