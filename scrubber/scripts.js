@@ -1,7 +1,28 @@
 function changeImage(){
-			var x = document.getElementById("myRange").value;
-			document.getElementById("currentValue").innerHTML = x;
 			var mainImageChildren = document.getElementById("mainImage").children;
+			var numImages = document.getElementById("mainImage").childElementCount;
+			var minValue = document.getElementById("myRange").min;
+			var maxValue = document.getElementById("myRange").max;
+			var interval = (maxValue - minValue) / numImages;
+			var currentValue = document.getElementById("myRange").value;
+			
+			document.getElementById("currentValue").innerHTML = currentValue;
+			
+			/*var i = 0;
+			while(i < mainImageChildren.length){
+				var minValForThisImage = i * interval;
+				var maxValForThisImage = (i+ 1) * interval;
+				for(var j = 0; j < mainImageChildren.length; j++){
+					if(i == j)
+						mainImageChildren[j].style.display = "block"
+					else
+						mainImageChildren[j].style.display = "none";
+				}
+				if(currentValue < minValForThisImage)
+					i--;
+				if(currentValue > maxValForThisImage)
+					i++;
+			}*/
 			
 			/*hardcoded for now*/
 			if(document.getElementById("myRange").value < 10){
