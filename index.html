@@ -27,7 +27,7 @@
 	
     		$("#load_gender_button").click(function(){
 				// Load Gender Screen
-				$("#next_screen").load("gender.html #gender_screen");
+				$("#next_screen").load("gender.html .loadable");
 				$("#current_screen").slideUp("slow");
 				$("#next_screen").slideDown("slow");
 				$("#next_screen").attr("id", "tmp");
@@ -37,7 +37,7 @@
 			$("#malePic").click(function(){
 				// TODO: Save gender as male
 				// For now, reload page
-				$("#next_screen").load("home.html #home_screen");
+				$("#next_screen").load("home.html .loadable");
 				$("#current_screen").slideUp("slow");
 				$("#next_screen").slideDown("slow");
 				$("#next_screen").attr("id", "tmp");
@@ -47,7 +47,7 @@
 			$("#femalePic").click(function(){
 				// TODO: Save gender as female
 				// For now, reload page
-				$("#next_screen").load("home.html #home_screen");
+				$("#next_screen").load("home.html .loadable");
 				$("#current_screen").slideUp("slow");
 				$("#next_screen").slideDown("slow");
 				$("#next_screen").attr("id", "tmp");
