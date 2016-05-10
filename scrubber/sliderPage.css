@@ -1,24 +1,65 @@
+
+
 #mainImage{
+	position: absolute;
+	top: 135px;
+	left: 0%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-img.displayed{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#currentValue{
-	text-align: center;
-	margin-top: 100px;
-}
-
-#minParam{
 	float: left;
 }
 
-#maxParam{
-	float:right;
+#minParam{
+	position:absolute;
+	top: 300px;
+	right: 675px;
+	font-family: 'Open Sans';
 }
+
+#maxParam{
+	position:absolute;
+	top: 300px;
+	right: 25px;
+	font-family: 'Open Sans';
+}
+
+#currentValue{
+	position: absolute;
+	top: 275px;
+	right: 361px;
+	font-family: 'Open Sans';
+	font-size: 500%;
+}
+
+/*#myRange{
+	position:absolute;
+	top: 250px;
+	right:0px;
+}*/
+
+/*img.displayed{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+/*#currentValue{
+	text-align: center;
+	margin-top: 100px;
+}*/
+
+/*#minParam{
+	float: left;
+}*/
+
+/*#maxParam{
+	float:right;
+}*/
+
+/*#myRange{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	float:right;
+}*/

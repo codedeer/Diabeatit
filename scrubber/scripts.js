@@ -1,3 +1,8 @@
+function setParams(){
+	document.getElementById("minParam").innerHTML = document.getElementById("myRange").min;
+	document.getElementById("maxParam").innerHTML = document.getElementById("myRange").max;
+}
+
 function changeImage(){
 			var mainImageChildren = document.getElementById("mainImage").children;
 			var numImages = document.getElementById("mainImage").childElementCount;
