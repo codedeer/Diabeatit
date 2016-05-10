@@ -29,7 +29,7 @@
 		}
 		function loadHomePage(){
 			$(document).ready(function(){
-    			// Load Gender Screen
+    			// Load Home Screen
 				$("#next_screen").load("home.html .loadable");
 				$("#current_screen").slideUp("slow");
 				$("#next_screen").slideDown("slow");
@@ -43,46 +43,7 @@
 
 	<!-- JQuery -->
 	<script type="text/javascript" src="jquery-2.2.3.js"></script>
-	<!-- 
-	<script>
-		// Switch Screens
-		$(document).ready(function(){
-    		$("#load_gender_button").click(function(){
-				// Load Gender Screen
-				$("#next_screen").load("gender.html .loadable");
-				$("#current_screen").slideUp("slow");
-				$("#next_screen").slideDown("slow");
-				$("#next_screen").attr("id", "tmp");
-				$("#current_screen").attr("id", "next_screen");
-				$("#tmp").attr("id", "current_screen");
-				
-				// Rebind Buttons
-				$("#malePic").click(function(){
-					// TODO: Save gender as male
-					// For now, reload page
-					$("#next_screen").load("home.html .loadable");
-					$("#current_screen").slideUp("slow");
-					$("#next_screen").slideDown("slow");
-					$("#next_screen").attr("id", "tmp");
-						$("#curent_screen").attr("id", "next_screen");
-					$("#tmp").attr("id", "current_screen");
-    			});
-				$("#femalePic").click(function(){
-					// TODO: Save gender as female
-					// For now, reload page
-					$("#next_screen").load("home.html .loadable");
-					$("#current_screen").slideUp("slow");
-					$("#next_screen").slideDown("slow");
-					$("#next_screen").attr("id", "tmp");
-					$("#curent_screen").attr("id", "next_screen");
-					$("#tmp").attr("id", "current_screen");
-    			});
-    		});
-
-		});
-	</script>
-	-->
-
+	
 </head>
 <body>
 	<center>
