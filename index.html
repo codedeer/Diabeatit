@@ -19,21 +19,42 @@
 	</script>
 
 	<!-- JQuery -->
-	<script type="text/javascript" src="jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="jquery-2.2.3.js">
+		function load_home(){
+			$("#current_screen").load("home.html #home_screen");
+		}
+	</script>
 	<script>
 		// Switch Screens
 		$(document).ready(function(){
     		$("#load_gender_button").click(function(){
+				// Load Gender Screen
 				$("#next_screen").load("gender.html #gender_screen");
-				$("#home_screen").slideUp("slow");
-				//$("#gender_screen").slideDown("slow");
-			
+				$("#current_screen").slideUp("slow");
 				$("#next_screen").slideDown("slow");
+				$("#next_screen").attr("id", "tmp");
+				$("#curent_screen").attr("id", "next_screen");
+				$("#tmp").attr("id", "current_screen");
     		});
 			$("#malePic").click(function(){
-				// Save gender as male
-				$("#gender_screen").slideUp("slow");
-				$("#age_screen").slideDown("slow");
+				// TODO: Save gender as male
+				// For now, reload page
+				$("#next_screen").load("home.html #home_screen");
+				$("#current_screen").slideUp("slow");
+				$("#next_screen").slideDown("slow");
+				$("#next_screen").attr("id", "tmp");
+				$("#curent_screen").attr("id", "next_screen");
+				$("#tmp").attr("id", "current_screen");
+    		});
+			$("#femalePic").click(function(){
+				// TODO: Save gender as female
+				// For now, reload page
+				$("#next_screen").load("home.html #home_screen");
+				$("#current_screen").slideUp("slow");
+				$("#next_screen").slideDown("slow");
+				$("#next_screen").attr("id", "tmp");
+				$("#curent_screen").attr("id", "next_screen");
+				$("#tmp").attr("id", "current_screen");
     		});
 		});
 	</script>
@@ -41,25 +62,13 @@
 </head>
 <body>
 	<center>
-		<div id="home_screen" style="border: 6px solid black; width: 1024px; height: 768px;"  >
-			<h1 id="welcome" style="color: gray; font-size: 40px;"><b>Welcome to DiaBEATit!</b></h1>
-			<img src="./images/diabeatit_logo.png" id="logo" width="40%" height ="65%"/>
-			<hr width = "30%"/>
-			<br />
-			<img src="./images/GetStarted.png" id="load_gender_button">
+		<div id="current_screen" style="border: 6px solid black; width: 1024px; height: 768px;" onload="load_home()">
+			<!-- Home page gets loaded by default -->
 		</div>
 		<div id="next_screen" style="border: 6px solid black; width: 1024px; height: 768px; display: none;"  >
+			<!-- Container to put the next screen in -->
 		</div>
-		<!--
-		<div id="gender_screen" style="border: 6px solid black; width: 1024px; height: 768px; display: none">
-			<h1 style="color: gray; font-size: 80px;" ><b>What is your gender?<b></h1>	
-			<img id="malePic" src="./images/male.png" width="350px" height="400px" style="float:left; padding-left: 100px;"/>   
-			<img id="femalePic" src="./images/female.png" width="350px" height="400px" style="float:right; padding-right: 100px;"/>
-			<br/>
-			<p style="font-size: 40px; float: left; padding-left: 230px">Male</p>
-			<p style="font-size: 40px; float: right; padding-right: 215px">Female</p>
-		</div>
-		-->
+
 	</center>
 </body>
 
