@@ -16,17 +16,16 @@
 	</style>
 	<!-- Javascript -->
 	<script type="text/javascript">
+
 	</script>
 
 	<!-- JQuery -->
-	<script type="text/javascript" src="jquery-2.2.3.js">
-		function load_home(){
-			$("#current_screen").load("home.html #home_screen");
-		}
-	</script>
+	<script type="text/javascript" src="jquery-2.2.3.js"></script>
 	<script>
 		// Switch Screens
 		$(document).ready(function(){
+			// Load home page
+			$("#current_screen").load("home.html #home_screen");
     		$("#load_gender_button").click(function(){
 				// Load Gender Screen
 				$("#next_screen").load("gender.html #gender_screen");
