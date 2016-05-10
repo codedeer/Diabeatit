@@ -1,16 +1,9 @@
-<html>
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-	<meta charset="utf-8">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>DiaBEATit - tabView</title>
-
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-	<style>
+<title>Content navigation tab - pagecolumn.com</title>
+<style type='text/css'>
 .content {
    clear: both;
    border: #cfcfcf 1px solid;
@@ -24,53 +17,37 @@
    margin: 0px;
 }
 .ullifloat {
+   
    float : left;
    padding-left: opx;
    border-right:  #cfcfcf 1px solid;
-   background-color: #cfcfcf;
+   background-color: #ffcfcf;
    margin-right: 0px;
 }
 .ula {
    position: relative;
    text-decoration: none;
-   display: block;
+   display: inline-block;
    padding: 5px 10px;
    cursor: pointer;
-   font: bold 11px arial, sans-serif;
-   color: #c00000;
+   font: bold 12px arial, sans-serif;
+   color: #f00000;
 }
 #tabco4{
    position: relative;
    left : 568px;
    width: 400px;
-   background-color: #6699cc;
+   background-color: #d699cc;
    border-right: #6699cc 2px solid;
 }
 #tabco4 ul a:hover {
-   color: #0062e6;
+   color: #a062e6;
 }
 
 </style>
 
-    <!-- tabView -->
-	<div id="tabco4">
-    <div>content tab1-bottom</div>
-    <div >content tab2-bottom</div>
-    <div>content tab3-bottom</div>
-    <div >content tab4-bottom</div>
-    <ul>
-        <li><a href="javascript:vd()">tab 1-b</a></li>
-        <li><a href="javascript:vd()">tab 2-b</a></li>
-        <li><a href="javascript:vd()">tab 3-b</a></li>
-        <li><a href="javascript:vd()">tab 4-b</a></li>    
-    </ul>
-    
-</div>
-
-
-	<script type="text/javascript">
-
-	window.onload = function(){
+<script type='text/javascript'>
+window.onload = function(){
 init()
 }
 var containercolor="#6699cc";
@@ -270,9 +247,28 @@ function getTargetElement(evt) {
 function $(id){ return(document.getElementById(id)); }
 function $$(e,tag) {return e.getElementsByTagName(tag);}
 
-​
+   </script>
+</head>
 
-	</script>
+<body>
+	<div id="tabco4">
+	    <div>
+	    	<img src = "./images/tips-1-exercise_360.png">
+	    	
+	    </div>
+	    <div>content tab2</div>
+	    <div>content tab3</div>
+	    
+	    <ul>
+	    	
+	         <li><a href="javascript:vd()">Treatment</a></li>
+	         <li><a href="javascript:vd()">&nbsp;&nbsp;Effects&nbsp;&nbsp;</a></li>
+	         <li><a href="javascript:vd()">&nbsp;&nbsp;&nbsp;Tips&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+	         
+	    </ul>
+	 </div> 
 
-	
+</body>
 </html>
+
+
