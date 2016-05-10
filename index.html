@@ -3,7 +3,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DiaBEATit</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<!-- CSS -->
 	<style type ="text/css">
 		html{
@@ -17,20 +16,25 @@
 	</style>
 	<!-- Javascript -->
 	<script type="text/javascript">
-		function load_gender(){
-			document.getElementById("appwindow").innerHTML='<object type="text/html" data="gender.html" height="100%" width = "100%"></object>';
-		}
 	</script>
+
 	<!-- JQuery -->
-	<script src="jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="jquery-2.2.3.js"></script>
 	<script>
 		// Switch Screens
 		$(document).ready(function(){
     		$("#load_gender_button").click(function(){
-        		$("#home_screen").slideUp("slow");
-				$("#gender_screen").slideDown("slow");
-    		});
+				$("#next_screen").load("gender.html #gender_screen");
+				$("#home_screen").slideUp("slow");
+				//$("#gender_screen").slideDown("slow");
 			
+				$("#next_screen").slideDown("slow");
+    		});
+			$("#malePic").click(function(){
+				// Save gender as male
+				$("#gender_screen").slideUp("slow");
+				$("#age_screen").slideDown("slow");
+    		});
 		});
 	</script>
 
@@ -38,21 +42,24 @@
 <body>
 	<center>
 		<div id="home_screen" style="border: 6px solid black; width: 1024px; height: 768px;"  >
-			<h1 style="color: gray; font-size: 40px;"><b>Welcome to DiaBEATit!<b></h1>
+			<h1 id="welcome" style="color: gray; font-size: 40px;"><b>Welcome to DiaBEATit!</b></h1>
 			<img src="./images/diabeatit_logo.png" id="logo" width="40%" height ="65%"/>
 			<hr width = "30%"/>
 			<br />
 			<img src="./images/GetStarted.png" id="load_gender_button">
 		</div>
+		<div id="next_screen" style="border: 6px solid black; width: 1024px; height: 768px; display: none;"  >
+		</div>
+		<!--
 		<div id="gender_screen" style="border: 6px solid black; width: 1024px; height: 768px; display: none">
 			<h1 style="color: gray; font-size: 80px;" ><b>What is your gender?<b></h1>	
-			<img src="./images/male.png" width="350px" height="400px" style="float:left; padding-left: 100px;"/>   
-			<img src="./images/female.png" width="350px" height="400px" style="float:right; padding-right: 100px;"/>
+			<img id="malePic" src="./images/male.png" width="350px" height="400px" style="float:left; padding-left: 100px;"/>   
+			<img id="femalePic" src="./images/female.png" width="350px" height="400px" style="float:right; padding-right: 100px;"/>
 			<br/>
 			<p style="font-size: 40px; float: left; padding-left: 230px">Male</p>
 			<p style="font-size: 40px; float: right; padding-right: 215px">Female</p>
-			
 		</div>
+		-->
 	</center>
 </body>
 
