@@ -23,10 +23,10 @@ html{
 	font-size: 200%
 }
 
-#currentAge{
+#currentWeight{
 	position: absolute;
 	top: 250px;
-	right: 320px;
+	right: 390px;
 	font-family: vagFont;
 	font-size: 800%;
 	color: #0099ff;
@@ -35,7 +35,7 @@ html{
 #prompt{
 	position: absolute;
 	top: 10%;
-	margin-left: 200px;
+	margin-left: 160px;
 	font-family: vagFont;
 	font-weight: 500;
 	font-size: 500%
