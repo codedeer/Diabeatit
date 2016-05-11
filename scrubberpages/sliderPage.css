@@ -1,8 +1,6 @@
-
-
 #mainImage{
 	position: absolute;
-	top: 135px;
+	top: 134px;
 	left: 0%;
 	display: block;
 	margin-left: auto;
@@ -30,6 +28,11 @@
 	right: 361px;
 	font-family: 'Open Sans';
 	font-size: 500%;
+}
+
+img.displayed{
+	width:400px;
+	height:500px;
 }
 
 /*#myRange{
