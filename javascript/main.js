@@ -1,5 +1,12 @@
 // javascript functions
 
+function loadAreYouDiabeticPage(dir){
+	$(document).ready(function(){
+		// Load Gender Screen
+		$("#next_screen").load("are_you_diabetic.html .loadable");
+	});
+	swapScreens(dir);
+}
 function loadGenderPage(dir){
 	$(document).ready(function(){
 		// Load Gender Screen
