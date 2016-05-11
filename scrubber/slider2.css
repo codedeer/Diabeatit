@@ -1,11 +1,11 @@
 input[type='range'] {
   position: absolute;
-  top: 500px;
-  right: -230px;
+  top: 70%;
+  left: 50%;
   border: solid 0 transparent;
   border-width: 0 1em;
   padding: 1em 0 0;
-  width: 32em;
+  width: 50em;
   height: 2em;
   border-radius: .25em;
   transform: translate(-50%, -50%);

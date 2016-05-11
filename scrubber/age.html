@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="slider2.css">
+		<link rel="stylesheet" type="text/css" href="age.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body onload="setParams()">
+		<script src = "scripts.js"></script>
+		
+		<p id ="minParam"></p>
+		<input type="range" id="myRange" value="0" min="5" max="95" oninput="alignAge(); changeAge()" />
+		<p id ="maxParam"></p>
+		
+		<p id="currentAge">0</p>
+		<p id="prompt">Please select your age</p>
+		
+		<img src="../images/Continue.png" / alt="continue" id="continue" onclick()="load_age()">
+		
+	</body>
+</html>

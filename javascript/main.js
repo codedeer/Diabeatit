@@ -28,6 +28,13 @@ function loadBodyPartsPage(dir){
 	});
 	swapScreens(dir);
 }
+function loadSliderPage(dir){
+	$(document).ready(function(){
+  			// Load Body Parts Screen
+		$("#next_screen").load("scrubber/sliderPage.html .loadable");
+	});
+	swapScreens(dir);
+}
 function swapScreens(dir){
 	if (dir == "down"){
 		$("#next_screen").detach().appendTo("#centerpiece");

@@ -1,0 +1,39 @@
+#minParam{
+	position:absolute;
+	top: 495px;
+	right: 920px;
+	font-family: 'Open Sans';
+	font-size: 200%
+}
+
+#maxParam{
+	position:absolute;
+	top: 495px;
+	left: 920px;
+	font-family: 'Open Sans';
+	font-size: 200%
+}
+
+#currentAge{
+	position: absolute;
+	top: 250px;
+	right: 475px;
+	font-family: 'Open Sans';
+	font-size: 800%;
+	color: #0099ff;
+}
+
+#prompt{
+	position: absolute;
+	top: 10%;
+	margin-left: 100px;
+	font-family: 'Open Sans';
+	font-weight: 500;
+	font-size: 500%
+}
+
+#continue{
+	position: absolute;
+	top: 80%;
+	left: 265px;
+}
