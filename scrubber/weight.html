@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="slider2.css">
+		<link rel="stylesheet" type="text/css" href="weight.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body onload="setParams()">
+		<script src = "scripts.js"></script>
+		<script type="text/javascript" src="../javascript/main.js"></script>
+		<script type="text/javascript" src="../javascript/jquery-2.2.3.js"></script>
+		
+		<p id ="minParam" class="loadable"></p>
+		<input type="range" id="myRange" class="loadable" value="0" min="0" max="300" oninput="alignWeight(); changeWeight()" />
+		<p id ="maxParam" class="loadable"></p>
+		
+		<p id="currentWeight" class="loadable">0 lbs</p>
+		<p id="prompt" class="loadable">What is your weight?</p>
+		
+		<img src="../images/Continue.png" / alt="continue" id="continue" class="loadable" onclick()="load_age()">
+		
+	</body>
+</html>
