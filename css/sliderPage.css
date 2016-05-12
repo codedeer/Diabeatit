@@ -1,0 +1,104 @@
+html{
+	font-family: vagFont;
+	overflow: hidden; 
+}
+@font-face{
+	font-family: vagFont;
+	src: url(../fonts/VAGRoundedStd-Light.otf);
+}
+
+#mainImage{
+	position: absolute;
+	top: 134px;
+	left: 0%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+}
+
+#minParam{
+	position:absolute;
+	top: 476px;
+	right: 575px;
+	font-family: vagFont;
+	font-size: 120%
+}
+
+#maxParam{
+	position:absolute;
+	top: 476px;
+	right: 25px;
+	font-family: vagFont;
+	font-size: 120%
+}
+
+#currentValue{
+	position: absolute;
+	top: 300px;
+	right: 293px;
+	font-family: vagFont;
+	font-size: 500%;
+	color: #0099ff;
+}
+
+img.displayed{
+	width:400px;
+	height:500px;
+}
+
+#unit{
+	position:absolute;
+	top: 500px;
+	right: 280px;
+	font-family: vagFont;
+	font-size:200%;
+}
+
+#parameter{
+	position:absolute;
+	top: 275px;
+	left: 435px;
+	font-family: vagFont;
+	font-size:225%;
+}
+
+#description{
+	position:absolute;
+	top: 100px;
+	left: 435px;
+	font-family: vagFont;
+	font-size:300%;
+}
+
+/*#myRange{
+	position:absolute;
+	top: 250px;
+	right:0px;
+}*/
+
+/*img.displayed{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+/*#currentValue{
+	text-align: center;
+	margin-top: 100px;
+}*/
+
+/*#minParam{
+	float: left;
+}*/
+
+/*#maxParam{
+	float:right;
+}*/
+
+/*#myRange{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	float:right;
+}*/
