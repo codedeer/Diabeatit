@@ -28,34 +28,6 @@ function loadBodyPartsPage(dir){
 	});
 	swapScreens(dir);
 }
-function loadSliderPage(dir){
-	$(document).ready(function(){
-  			// Load Body Parts Screen
-		$("#next_screen").load("scrubber/sliderPage.html .loadable");
-	});
-	swapScreens(dir);
-}
-function loadAgePage(dir){
-	$(document).ready(function(){
-  			// Load Body Parts Screen
-		$("#next_screen").load("scrubber/age.html .loadable");
-	});
-	swapScreens(dir);
-}
-function loadWeightPage(dir){
-	$(document).ready(function(){
-  			// Load Body Parts Screen
-		$("#next_screen").load("scrubber/weight.html .loadable");
-	});
-	swapScreens(dir);
-}
-function loadHeightPage(dir){
-	$(document).ready(function(){
-  			// Load Body Parts Screen
-		$("#next_screen").load("scrubber/height.html .loadable");
-	});
-	swapScreens(dir);
-}
 function swapScreens(dir){
 	if (dir == "down"){
 		$("#next_screen").detach().appendTo("#centerpiece");
