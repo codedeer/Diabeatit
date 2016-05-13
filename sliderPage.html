@@ -14,27 +14,31 @@
 	</head>
 	
 	<body onload="setParams()">
-		<div id ="mainImage" class="loadable">
-			<img src = "images/image1.png" alt = "image1" id="image1" class="displayed loadable">
-			<img src = "images/image2.png" alt="image2" id="image2" class="displayed loadable" style="display:none">
-			<img src = "images/image3.png" alt="image3" id="image3" class="displayed loadable" style="display:none">
-			<img src = "images/image4.png" alt="image4" id="image4" class="displayed loadable" style="display:none">
-			<img src = "images/image5.png" alt="image5" id="image5" class="displayed loadable" style="display:none">
-			<img src = "images/image6.png" alt="image6" id="image6" class="displayed loadable" style="display:none">
-			<img src = "images/image7.png" alt="image7" id="image7" class="displayed loadable" style="display:none">
-			<img src = "images/image8.png" alt="image8" id="image8" class="displayed loadable" style="display:none">
-			<img src = "images/image9.png" alt="image9" id="image9" class="displayed loadable" style="display:none">
-			<img src = "images/image10.png" alt="image10" id="image10" class="displayed loadable" style="display:none">
-		</div>
-		
-		<p id ="minParam" class="loadable">myRange</p>
-		<input type="range" id="myRange" class="loadable" value="0" min="0" max="100" oninput="changeImage(); alignCurrentValue()" />
-		<p id ="maxParam" class="loadable"></p>
-		
-		<p id="currentValue" class="loadable">0</p>
-		<p id="unit" class="loadable">units</p>
-		<p id="parameter" class="loadable">Parameter</p>
-		<p id="description" class="loadable">Effects of ???? on ????</p>
+		<center>
+			<div id="bodyparts_screen" style="border: 6px solid black; width: 1024px; height: 768px; position: relative">
+				<div id ="mainImage" class="loadable">
+					<img src = "images/image1.png" alt = "image1" id="image1" class="displayed loadable">
+					<img src = "images/image2.png" alt="image2" id="image2" class="displayed loadable" style="display:none">
+					<img src = "images/image3.png" alt="image3" id="image3" class="displayed loadable" style="display:none">
+					<img src = "images/image4.png" alt="image4" id="image4" class="displayed loadable" style="display:none">
+					<img src = "images/image5.png" alt="image5" id="image5" class="displayed loadable" style="display:none">
+					<img src = "images/image6.png" alt="image6" id="image6" class="displayed loadable" style="display:none">
+					<img src = "images/image7.png" alt="image7" id="image7" class="displayed loadable" style="display:none">
+					<img src = "images/image8.png" alt="image8" id="image8" class="displayed loadable" style="display:none">
+					<img src = "images/image9.png" alt="image9" id="image9" class="displayed loadable" style="display:none">
+					<img src = "images/image10.png" alt="image10" id="image10" class="displayed loadable" style="display:none">
+				</div>
+				
+				<p id ="minParam" class="loadable">myRange</p>
+				<input type="range" id="myRange" class="loadable" value="0" min="0" max="100" oninput="changeImage(); alignCurrentValue()" />
+				<p id ="maxParam" class="loadable"></p>
+				
+				<p id="currentValue" class="loadable">0</p>
+				<p id="unit" class="loadable">units</p>
+				<p id="parameter" class="loadable">Parameter</p>
+				<p id="description" class="loadable">Effects of ???? on ????</p>
+			</div>
+		</center>
 		
 	</body>
 </html>
