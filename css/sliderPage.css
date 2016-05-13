@@ -7,7 +7,7 @@ html{
 	src: url(../fonts/VAGRoundedStd-Light.otf);
 }
 
-#mainImage{
+/*#mainImage{
 	position: absolute;
 	top: 134px;
 	left: 0%;
@@ -15,7 +15,7 @@ html{
 	margin-left: auto;
 	margin-right: auto;
 	float: left;
-}
+}*/
 
 #minParam{
 	position:absolute;
@@ -43,6 +43,13 @@ html{
 }
 
 img.displayed{
+	position: absolute;
+	top: 134px;
+	left: 0%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
 	width:400px;
 	height:500px;
 }
