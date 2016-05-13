@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<link rel="stylesheet" type="text/css" href="css/slider2.css">
-		<link rel="stylesheet" type="text/css" href="css/age.css">
+		<link rel="stylesheet" type="text/css" href="css/height.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		
 		<script src = "javascript/scripts.js"></script>
@@ -14,13 +14,13 @@
 	</head>
 	
 	<body onload="setParams()">
-		
+
 		<p id ="minParam" class="loadable">0</p>
-		<input type="range" id="myRange" class="loadable" value="0" min="5" max="95" oninput="alignAge(); changeAge()" />
-		<p id ="maxParam" class="loadable">95</p>
+		<input type="range" id="myRange" class="loadable" value="0" min="0" max="120" oninput="alignHeight(); changeHeight()" />
+		<p id ="maxParam" class="loadable">120</p>
 		
-		<p id="currentAge" class="loadable">5 years</p>
-		<p id="prompt" class="loadable">What is your age?</p>
+		<p id="currentHeight" class="loadable">0"</p>
+		<p id="prompt" class="loadable">What is your height?</p>
 		
 		<img src="images/Continue.png" / alt="continue" id="continue" class="loadable" onclick()="load_age()">
 		

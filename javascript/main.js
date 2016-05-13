@@ -42,6 +42,13 @@ function loadAgePage(dir){
 	});
 	swapScreens(dir);
 }
+function loadHeightPage(dir){
+	$(document).ready(function(){
+  			// Load Body Parts Screen
+		$("#next_screen").load("height.html .loadable");
+	});
+	swapScreens(dir);
+}
 function swapScreens(dir){
 	if (dir == "down"){
 		$("#next_screen").detach().appendTo("#centerpiece");
