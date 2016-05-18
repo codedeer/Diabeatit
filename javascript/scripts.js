@@ -41,42 +41,42 @@ function alignCurrentValue(){
 }
 
 function changeAge(){
-	var currentAge = document.getElementById("myRange").value;
+	var currentAge = document.getElementById("myRange1").value;
 	
 	document.getElementById("currentAge").innerHTML = currentAge + " years";
 }
 
 function alignAge(){
-	if(document.getElementById("myRange").value < 10)
+	if(document.getElementById("myRange1").value < 10)
 		document.getElementById("currentAge").style.right = "320px";
 	else
 		document.getElementById("currentAge").style.right = "285px"
 }
 
 function changeWeight(){
-	var currentWeight = document.getElementById("myRange").value;
+	var currentWeight = document.getElementById("myRange2").value;
 	
 	document.getElementById("currentWeight").innerHTML = currentWeight + " lbs";
 }
 
 function alignWeight(){
-	if(document.getElementById("myRange").value < 10)
+	if(document.getElementById("myRange2").value < 10)
 		document.getElementById("currentWeight").style.right = "390px";
-	else if(document.getElementById("myRange").value >= 10 && document.getElementById("myRange").value < 100)
+	else if(document.getElementById("myRange2").value >= 10 && document.getElementById("myRange2").value < 100)
 		document.getElementById("currentWeight").style.right = "365px";
 	else
 		document.getElementById("currentWeight").style.right = "335px";
 }
 function changeHeight(){
-	var currentHeight = document.getElementById("myRange").value;
+	var currentHeight = document.getElementById("myRange3").value;
 	
 	document.getElementById("currentHeight").innerHTML = currentHeight + " \"";
 }
 
 function alignHeight(){
-	if(document.getElementById("myRange").value < 10)
+	if(document.getElementById("myRange3").value < 10)
 		document.getElementById("currentHeight").style.right = "400px";
-	else if(document.getElementById("myRange").value >= 10 && document.getElementById("myRange").value < 100)
+	else if(document.getElementById("myRange3").value >= 10 && document.getElementById("myRange3").value < 100)
 		document.getElementById("currentHeight").style.right = "365px";
 	else
 		document.getElementById("currentHeight").style.right = "355px";
