@@ -55,6 +55,14 @@ function loadDiabetesInfoPage(dir){
 	swapScreens(dir);
 }
 
+function loadDiabetesHabitsPage(dir){
+	$(document).ready(function(){
+		// Load Gender Screen
+		$("#next_screen").load("diabetes_habits.html .loadable");
+	});
+	swapScreens(dir);
+}
+
 function loadBodyPartsPage(dir){
 	$(document).ready(function(){
   			// Load Body Parts Screen
