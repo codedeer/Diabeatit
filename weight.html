@@ -13,12 +13,13 @@
 	</head>
 	
 	<body onload="setParams()">
-				<img id="backButton" src="./images/back_button.png" width="80px" height="80px" class="loadable" style="vertical-align: top; display: inline; padding-top: 30px; padding-right: 80px;" onclick="loadGenderPage()"/>
+
 		<p id ="minParam" class="loadable">0</p>
 		<input type="range" id="myRange2" class="loadable" value="0" min="0" max="300" oninput="alignWeight(); changeWeight()" />
 		<p id ="maxParam" class="loadable">300</p>
 		
 		<p id="currentWeight" class="loadable">0 lbs</p>
+		<img id="backButton" src="./images/back_button.png" width="80px" height="80px" class="loadable" style="vertical-align: top; display: inline; padding-top: 30px; padding-right: 80px;" onclick="loadHeightPage()"/>
 		<p id="prompt" class="loadable" style="display: inline-block; padding-right: 100px;">What is your weight?</p>
 		
 		<img src="images/continue.png" alt="continue" id="continue" class="loadable" onclick="loadHeightPage('down')"/>

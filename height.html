@@ -13,12 +13,13 @@
 	</head>
 	
 	<body onload="setParams()">
-		<img id="backButton" src="./images/back_button.png" width="80px" height="80px" class="loadable" style="vertical-align: top; display: inline; padding-top: 30px; padding-right: 80px;" onclick="loadGenderPage()"/>
+
 		<p id ="minParam" class="loadable">0</p>
 		<input type="range" id="myRange3" class="loadable" value="0" min="0" max="120" oninput="alignHeight(); changeHeight()" />
 		<p id ="maxParam" class="loadable">120</p>
 		
 		<p id="currentHeight" class="loadable">0"</p>
+				<img id="backButton" src="./images/back_button.png" width="80px" height="80px" class="loadable" style="vertical-align: top; display: inline; padding-top: 30px; padding-right: 80px;" onclick="loadAgePage()"/>
 		<p id="prompt" class="loadable" style="display: inline-block; padding-right: 100px;">What is your height?</p>
 		
 		<img src="images/continue.png" alt="continue" id="continue" class="loadable" onclick="loadAreYouDiabeticPage('down')"/>
