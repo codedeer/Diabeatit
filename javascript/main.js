@@ -7,6 +7,7 @@ function loadHomePage(dir){
 	});
 	swapScreens(dir);
 }
+
 function loadGenderPage(dir){
 	$(document).ready(function(){
 		// Load Gender Screen
@@ -22,13 +23,6 @@ function loadAgePage(dir){
 	});
 	swapScreens(dir);
 }
-function loadHeightPage(dir){
-	$(document).ready(function(){
-  			// Load Body Parts Screen
-		$("#next_screen").load("height.html .loadable");
-	});
-	swapScreens(dir);
-}
 function loadWeightPage(dir){
 	$(document).ready(function(){
   			// Load Body Parts Screen
@@ -36,11 +30,27 @@ function loadWeightPage(dir){
 	});
 	swapScreens(dir);
 }
+function loadHeightPage(dir){
+	$(document).ready(function(){
+  			// Load Body Parts Screen
+		$("#next_screen").load("height.html .loadable");
+	});
+	swapScreens(dir);
+}
+
 
 function loadAreYouDiabeticPage(dir){
 	$(document).ready(function(){
 		// Load Gender Screen
 		$("#next_screen").load("are_you_diabetic.html .loadable");
+	});
+	swapScreens(dir);
+}
+
+function loadDiabetesInfoPage(dir){
+	$(document).ready(function(){
+		// Load Gender Screen
+		$("#next_screen").load("diabetes_info.html .loadable");
 	});
 	swapScreens(dir);
 }
