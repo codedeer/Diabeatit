@@ -20,13 +20,27 @@
 <body>
 	<center>
 		<div id="bodyparts_screen" style="border: 6px solid black; width: 1024px; height: 768px;">
-			<h3 style="color:gray; font-weight: bold; font-size:30px;" class="loadable">Which part of the body would you like to explore?????</h3></h1>
+			<img id="backButton" src="./images/back_button.png" width="80px" height="80px" class="loadable" style="vertical-align: top; display: inline; padding-top: 30px; padding-right: 100px;" onclick="loadAreYouDiabeticPage()"/>
+			<h3 style="color:gray; font-weight: bold; font-size:30px; display: inline-block; padding-right:100px;"class="loadable">Which part of the body would you like to explore?????</h3>
 			<br />
-			<img src="./images/head.png" class="loadable" style="padding: 10px; 50px;" onclick="loadHomePage('up');"/>
-			<img src="./images/chest.png" class="loadable"style="padding: 10px; 50px;" onclick="loadHomePage('down');"/>
-			<img src="./images/legs.png" class="loadable" style="padding: 10px; 50px;" onclick="loadWeightPage('up');"/>
-			<img src="./images/heart.png" class="loadable" style="padding: 10px; 50px;" onclick="loadAreYouDiabeticPage('down');"/>
+			
+			<img src="./images/head.png" class="loadable" style="float:left;  height: 15%; padding-left: 100px; padding-top: 30px;" onclick="loadHomePage('up');"/>
+
+			<img src="./images/chest.png" class="loadable"style="float:right; height: 15%; padding-top: 30px; padding-right: 100px;" onclick="loadHomePage('down');"/>
+			<img src="./images/legs.png" class="loadable" style="float:left; height: 15%; clear: left; padding-left: 100px; padding-top: 60px;" onclick="loadWeightPage('up');"/>
+			<img src="./images/heart.png" class="loadable" style="float:right; clear: right; height: 15%; padding-right: 100px; padding-top: 60px;" onclick="loadAreYouDiabeticPage('down');"/>
+			<img src="./images/girl_avatar.png" class="loadable" height="60%" style="vertical-align: top"/>
 			<br />
+			<div class="loadable" style="margin-top: 100px; background:#33A3FF; display:inline-block; line-height: 30px; text-align:center; border: 4px solid white; width: 330px; height: 80px; ">
+				<h3 style="font-size: 30px; color: white;">Treatment</h3>
+			</div>
+			<div class="loadable" style="margin-top: 100px; background:#33A3FF; display:inline-block; line-height: 30px; text-align:center; border: 4px solid white; width: 330px; height: 80px;">
+				<h3 style="font-size: 30px; color: #FFF700;">Effects</h3>
+			</div>
+			<div class="loadable" style="margin-top: 100px; background:#33A3FF; display:inline-block; line-height: 30px; text-align:center; border: 4px solid white; width: 330px; height: 80px;">
+				<h3 style="font-size: 30px; color: white;">Tips</h3>
+			</div>
+						
 		</div>
 	</center>
 </body>
